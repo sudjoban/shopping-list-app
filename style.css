@@ -1,0 +1,32 @@
+body {
+	background-image: url("./background.jpg");
+	background-size: cover;
+}
+h1   {color: black; text-align: center; font-weight: bold; font-size: 40px;}
+p    {color: black; font-weight: bold; text-align: center; font-size: 20px;}
+.center {
+	margin: auto;
+	text-align: center;
+	width: 60%;
+	padding: 10px;
+}
+.formElements {
+	display: inline-flex;
+	padding: 5px;
+}
+.formElements > label, input, select {
+	padding: 5px;
+}
+button {margin-left: 10px; background-color: #aaafab; color: black; font-size: 17px;}
+.shoppingList {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+h2 {
+	text-align: center;
+}
+dt {
+	text-align: center;
+	padding: 3px;
+}

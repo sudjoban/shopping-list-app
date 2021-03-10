@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!-- Add a link to the stylesheet - This helps keep the html file less cluttered -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Shopping List App</h1>
+
+<div class="center">
+    <p>To start adding to you're shopping list - Enter product name, select the product category, hit submit:</p>
+    <div class="formElements">
+        <label">Product name: </label>
+        <input id="id_product" maxlength="254" name="product" type="text"> </input>
+        <label for="id_product_category">Product category:</label>
+        <select name="categories" id="categories-drop-down">
+            <option value="fruitandveg">Fruit and Vegetable</option>
+            <option value="bakery">Bakery</option>
+            <option value="fridge">Fridge</option>
+        </select>
+        <button id="addItem" type="submit" name="_submit" value='Add Product'>Add Product</button>
+    </div>
+</div>
+
+<div id="shoppingList" class = "shoppingList">
+<!-- The shopping list will dynamically be populated using JavaScript when items are added to the list -->
+</div> 
+<!-- A list of javascript files we want to include in our app -->
+<script src="./util.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
