@@ -1,10 +1,12 @@
 let fruitAndVegetableItems = [];
 let bakeryItems = [];
 let fridgeItems = [];
+let frozenItems = [];
 
 let fruitAndVegetable = 'Fruit and Vegetable';
 let bakery = 'Bakery';
 let fridge = 'Fridge';
+let frozen = 'Frozen';
 
 let mapInitialised = false;
 let categoryToItemsMap = new Map();
@@ -22,7 +24,8 @@ function addItem(item, category) {
     if (!mapInitialised) {
         categoryToItemsMap.set(fruitAndVegetable, fruitAndVegetableItems)
                             .set(bakery, bakeryItems)
-                            .set(fridge, fridgeItems);
+                            .set(fridge, fridgeItems)
+							.set(frozen, frozenItems);
         mapInitialised = true;
     }
 
@@ -37,6 +40,9 @@ function addItem(item, category) {
         case fridge:
             fridgeItems.push(item);
             break;
+        case frozen:
+            frozenItems.push(item);
+            break;			
     }
 
 	// get the shopping list element
